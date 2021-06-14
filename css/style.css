@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    position: relative;
+    background: #000 url(../image/Img_01.png);
+    height: 100vh;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: 0 0;
+    animation: animate 20s linear infinite;
+}
+.car {
+    position: absolute;
+    width: 450px;
+    bottom: -50px;
+    left: 1000px;
+}
+.superman {
+    position: absolute;
+    width: 250px;
+    top: 250px;
+    left: 2200px;
+    animation: superman 25s infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 5000px;
+    }
+}
+@keyframes superman {
+    0% {top: 350px;}
+    25% {top: 550px;}
+    50% {left: 1700px;}
+    70% {top: 250px;}
+    100% {top: 0px;}
+}
